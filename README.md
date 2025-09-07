@@ -63,6 +63,32 @@ It consolidates structured logs into actionable insights for **data engineers, M
 
 ---
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart TD
+    U[🧑 User] -->|Prompt| LLM[🤖 LLM Provider]
+    LLM -->|Response| W[📦 LLM Wrapper]
+
+    W -->|Log Prompt + Response + Metadata| LG[📝 Logger]
+
+    LG --> DB[(🗄️ SQLite Database)]
+    DB --> DSH[📊 Streamlit Dashboard]
+
+    subgraph Metrics
+        DB -->|Latency, Cost, Tokens, Errors| DSH
+    end
+
+    subgraph Governance
+        DB -->|Hallucination Flags, Feedback, Categories| DSH
+    end
+
+    subgraph Extensions
+        DB -->|Future: Prometheus / Grafana, OpenTelemetry| EXT[🔮 External Monitoring]
+    end
+```
+---
+
 ## 🛠️ Industry Relevance
 
 This dashboard adheres to **enterprise observability standards** by:  
