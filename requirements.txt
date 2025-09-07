@@ -1,0 +1,6 @@
+openai
+sqlalchemy
+streamlit
+faiss-cpu
+numpy
+pandas
