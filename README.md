@@ -1,7 +1,7 @@
 
-# 🛰️ LLM Observability Pipeline
+# 🛰️ Prompt-to-Insight: LLM Observability Framework
 
-The **LLM Observability Pipeline** is an end-to-end monitoring and evaluation framework designed to provide **enterprise-grade observability** into Large Language Model (LLM) usage.  
+The **Prompt-to-Insight** is an end-to-end monitoring and evaluation framework designed to provide **enterprise-grade observability** into Large Language Model (LLM) usage.  
 It captures user interactions, enriches them with metadata, and exposes insights via an interactive **Streamlit-powered dashboard**.
 
 This project bridges the gap between **data engineering** and **AI governance**, enabling teams to track **performance, cost, reliability, hallucinations, and user feedback** in a structured, auditable way.
